@@ -31,7 +31,7 @@ curl -sSL https://get.docker.com | sh
 ```
 ### Install dependacies
 ```
-sudo apt-get install bash jq curl avahi-daemon dbus software-properties-common apparmor-utils
+sudo apt-get install bash jq curl avahi-daemon dbus software-properties-common apparmor-utils network-manager
 ```
 ### Install HassIO
 ```
