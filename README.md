@@ -33,3 +33,7 @@ curl -sSL https://get.docker.com | sh
 ```
 sudo apt-get install bash jq curl avahi-daemon dbus software-properties-common apparmor-utils
 ```
+### Install HassIO
+```
+curl -sL https://raw.githubusercontent.com/home-assistant/hassio-installer/master/hassio_install.sh | bash -s -- -m raspberrypi4
+```
