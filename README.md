@@ -38,7 +38,7 @@ sudo apt-get install bash jq curl avahi-daemon dbus software-properties-common a
 curl -sL https://raw.githubusercontent.com/home-assistant/hassio-installer/master/hassio_install.sh | bash -s -- -m raspberrypi4
 ```
 
-## Setting up Apache reverse proxy
+## Setting up Apache reverse proxy on UBUNTU (Server)
 
 ### Install apache and plugins
 
