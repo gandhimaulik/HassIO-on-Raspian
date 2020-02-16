@@ -72,5 +72,5 @@ Below lines need to be added in sites enabled configuration file. Path in Ubuntu
 
 Restart Apache server
 ```
-sudo systemctl apache2 restart
+sudo service apache2 restart
 ```
