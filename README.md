@@ -39,17 +39,15 @@ curl -sL https://raw.githubusercontent.com/home-assistant/hassio-installer/maste
 ```
 ### Install HassIO 
 ```
-sudo -i
+sudo apt-get install -y software-properties-common apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager socat
 
-apt-get install -y software-properties-common apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager socat
+sudo systemctl disable ModemManager
 
-systemctl disable ModemManager
-
-systemctl stop ModemManager
+sudo systemctl stop ModemManager
 
 curl -fsSL get.docker.com | sh
 
-curl -sL "https://raw.githubusercontent.com/Kanga-Who/home-assistant/master/supervised-installer.sh" | bash -s -- -m raspberrypi4
+curl -sL "https://raw.githubusercontent.com/Kanga-Who/home-assistant/master/supervised-installer.sh" | sudo bash -s -- -m raspberrypi4
 ```
 
 ## Setting up Apache reverse proxy on UBUNTU (Server)
