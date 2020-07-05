@@ -33,9 +33,23 @@ curl -sSL https://get.docker.com | sh
 ```
 sudo apt-get install bash jq curl avahi-daemon dbus software-properties-common apparmor-utils network-manager
 ```
-### Install HassIO
+### Install HassIO (Not working)
 ```
 curl -sL https://raw.githubusercontent.com/home-assistant/hassio-installer/master/hassio_install.sh | bash -s -- -m raspberrypi4
+```
+### Install HassIO 
+```
+sudo -i
+
+apt-get install -y software-properties-common apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager socat
+
+systemctl disable ModemManager
+
+systemctl stop ModemManager
+
+curl -fsSL get.docker.com | sh
+
+curl -sL "https://raw.githubusercontent.com/Kanga-Who/home-assistant/master/supervised-installer.sh" | bash -s -- -m raspberrypi4
 ```
 
 ## Setting up Apache reverse proxy on UBUNTU (Server)
