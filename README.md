@@ -86,3 +86,13 @@ Restart Apache server
 ```
 sudo service apache2 restart
 ```
+
+### Installing Kodi
+
+```
+sudo apt install kodi kodi-pvr-iptvsimplekodi-inputstream-adaptive
+```
+#### BotAllen Repo
+```
+wget https://github.com/botallen/botallen.github.io/blob/master/repository.botallen-1.0.0.zip
+```
